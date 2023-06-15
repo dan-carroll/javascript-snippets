@@ -20,6 +20,8 @@ myImage.onclick = () => {
 What did work for me may have been due to the browser and JavaScript engine being utilized. (Google Chrome Version 114.0.5735.111 on Windows 10).
 
 ```
+let myImage = document.querySelector("img");
+
 myImage.onclick = function() {
     let mySrc = myImage.getAttribute("src");
     if (mySrc === "{{ site.baseurl }}/assets/images/GitHub_Logo.png") {
